@@ -7,6 +7,8 @@
     <title>KimingiTech</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/jpg" href="pp.images/kimingi-tech.png">
+    <!--Linking with swiper.js css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="header">
@@ -19,7 +21,6 @@
                     <li><a href="#services" onclick="closemenu()">Services</a></li>
                     <li><a href="#portifolio" onclick="closemenu()">Portifolio</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                   <!--<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>-->
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()" title="Menu"></i>
             </nav>
@@ -135,47 +136,68 @@
     </div>
 <!-------------------seemore------------------>
     <div class="see-more" id="see-more">
-        <h2 class="moretab-title">More About Me</h2>
-        <div class="more-tabs">
-            <p class="viewtabs activetab" onclick="openviewtab('Websites')">Websites</p>
-            <p class="viewtabs" onclick="openviewtab('Designs')">Designs</p>
-            <p class="viewtabs" onclick="openviewtab('Apps')">Apps</p>
-        </div>
-
-        <div class="viewcontents active-view" id="Websites">
-            <h2>Here are some of the Websites  i have created</h2>
-            <p>Click to view the website</p>
-            <ul>
-                <li><a href="https://kimingi318.github.io/kimingiTech/"> KimingiTech website</a></li>
-                <li><a href="#"> Perksparlour website</a></li>
-                <li><a href="#">Insidechuka website</a> </li>
-            </ul>
-        </div>
-        <div class="viewcontents " id="Designs">
-            <h2>Here are more designs</h2>
-            <h4>Individual logos</h4>
-            <div class="designs">
-                <div class="individual-logos">
-                    <p>Kimingi-Tech logo</p>
-                    <img class="design" src="pp.images/kimingi-tech.png" alt="kimingitech logo">
-                    <p>Kimingi-Tech logo-2</p>
-                    <img class="design" src="pp.images/kimingitech1-01.png" alt="Kimimgitech logo2">
-                </div>
-                <div class="group-logo">
-                    <p>Nerds-Minds logo</p>
-                    <img class="design" src="pp.images/portifolio-1.jpg" alt="group logos">
-                </div>
-                <div class="Posters">
-                    <p>My poster</p>
-                    <img class="design" src="pp.images/poster1-01.png" alt="My advert poster">
-                    <p>Beauty-poster</p>
-                    <img src="pp.images/PERKS.png" class="design" alt="beauty-poster">
+        <div class="container">
+            <h2 class="moretab-title">More About Me</h2>
+            <div class="more-tabs">
+                <p class="viewtabs activetab" onclick="openviewtab('Websites')">Websites</p>
+                <p class="viewtabs" onclick="openviewtab('Designs')">Designs</p>
+                <p class="viewtabs" onclick="openviewtab('Apps')">Apps</p>
+            </div>
+    
+            <div class="viewcontents active-view" id="Websites">
+                <h2>Here are some of the Websites  i have created</h2>
+                <p>Click to view the website</p>
+                <ul>
+                    <li><a href="https://kimingi318.github.io/kimingiTech/"> KimingiTech website</a></li>
+                    <li><a href="#"> Perksparlour website</a></li>
+                    <li><a href="#">Insidechuka website</a> </li>
+                </ul>
+            </div>
+            <div class="viewcontents " id="Designs">
+                <div class="container category">
+                    <div class="card-wrapper swiper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-items  swiper-slide">
+                                <div class="card-link">
+                                    <img src="pp.images/kimingi-tech.png" alt="kimingitech logo">
+                                    <p class="badge">Individual logo</p>
+                                </div>
+                            </li>
+                            <li class="card-items swiper-slide">
+                                <div class="card-link">
+                                    <img  src="pp.images/kimingitech1-01.png" alt="Kimimgitech logo2">
+                                    <p class="badge">Logo 2</p>
+                                </div>
+                            </li>
+                            <li class="card-items  swiper-slide">
+                                <div class="card-link">
+                                    <img  src="pp.images/portifolio-1.jpg" alt="group logos">
+                                    <p class="badge">Group-Logo</p>
+                                </div>
+                            </li>
+                            <li class="card-items swiper-slide">
+                                <div class="card-link">
+                                    <img src="pp.images/poster1-01.png" alt="My advert poster">
+                                    <p class="badge">Poster</p>
+                                </div>
+                            </li>
+                            <li class="card-items swiper-slide">
+                                <div class="card-link">
+                                    <img src="pp.images/PERKS.png" alt="beauty-poster">
+                                    <p class="badge">Poster</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="viewcontents" id="Apps">
-            <h2>Apps</h2>
-            <p>No apps at the moment</p>
+            <div class="viewcontents" id="Apps">
+                <h2>Apps</h2>
+                <p>No apps at the moment</p>
+            </div>
         </div>
     </div>
 <!------------------Contact------------------->
@@ -254,6 +276,37 @@
             document.getElementById(viewname).classList.add("active-view");
         }
 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+             new Swiper('.swiper', {
+              loop: true,
+              spaceBetween:30,
+
+          // If we need pagination
+             pagination: {
+              el: '.swiper-pagination',
+              },
+
+            // Navigation arrows
+             navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+             },
+
+
+             breakpoints:{
+             0: {
+                slidesPerView:1
+             },
+             768:{
+                slidesPerView: 2
+             },
+             1024:{
+                slidesPerView:3
+             },
+             }
+           });
     </script>
 </body>
 </html>
