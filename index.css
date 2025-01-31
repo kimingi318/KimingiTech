@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,9 @@
 }
 html{
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 body{
     background-color: #080808;
@@ -220,6 +224,7 @@ nav span{
     border-radius: 10px;
     display: block;
     transition:transform 0.5s ;
+    image-orientation: center;
 }
 .layer{
     width: 100%;
@@ -286,15 +291,16 @@ nav span{
 .moretab-title{
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 .more-tabs{
     display: flex;
     margin: 20px 0 40px;
+    color: #080808;
 }
 .viewtabs{
     margin-right:50px ;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -312,34 +318,28 @@ nav span{
 .viewtabs.activetab::after{
     width: 100%;
 }
-.category{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:#fff;
-    border-radius: 16px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+.viewcontents h2,p,a{
+    font-family: "tinos", serif;
 }
-/*.swiper{
-    width: 600px;
-    height: 300px;
-}*/
+.swiper{
+    background:transparent;
+    border-radius: 16px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
 .card-item{
     list-style: none;
 }
 .card-link{
     user-select: none;
     display: block;
-    background:  #dad4d4;
-    padding: 18px;
+    background:  transparent;
+    padding: 10px;
     border-radius: 15px;
-    text-decoration: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    border: 2px solid transparent;
-    transition: 0.2s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition:border 0.2s ease;
 }
 .card-link:hover{
-    border-color:black ;
+    border: 2px solid black ;
 }
 .card-link img{
     width:100%;
@@ -379,6 +379,33 @@ nav span{
 }
 .viewcontents.active-view{
     display: block;
+}
+.fullimage{
+    width: 80vw;
+    height: 90vh;
+    margin-left: 10vw;
+    top: 5vh;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 16px;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5);
+    background: url("pp.images/nerd2-01.png");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+.fullimage i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color:blue;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fullimage i:hover{
+    color: #ff004f;
+    font-size: 50px;
 }
 /****************Contact**************/
 .content-left p{
