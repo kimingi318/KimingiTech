@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
->>>>>>> main
 *{
     margin: 0;
     padding: 0;
@@ -11,12 +8,9 @@
 html{
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-=======
 ::-webkit-scrollbar{
     display: none;
 }
->>>>>>> main
 body{
     background-color: #080808;
     color: #fff;
@@ -230,10 +224,7 @@ nav span{
     border-radius: 10px;
     display: block;
     transition:transform 0.5s ;
-<<<<<<< HEAD
-=======
     image-orientation: center;
->>>>>>> main
 }
 .layer{
     width: 100%;
@@ -300,27 +291,21 @@ nav span{
 .moretab-title{
     font-size: 60px;
     font-weight: 600;
-<<<<<<< HEAD
     color: white;
-=======
     color: black;
->>>>>>> main
 }
 .more-tabs{
     display: flex;
     margin: 20px 0 40px;
-<<<<<<< HEAD
 }
 .viewtabs{
     margin-right:50px ;
     font-size: 30px;
-=======
     color: #080808;
 }
 .viewtabs{
     margin-right:50px ;
     font-size: 20px;
->>>>>>> main
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -338,7 +323,6 @@ nav span{
 .viewtabs.activetab::after{
     width: 100%;
 }
-<<<<<<< HEAD
 .category{
     display: flex;
     align-items: center;
@@ -351,7 +335,6 @@ nav span{
     width: 600px;
     height: 300px;
 }*/
-=======
 .viewcontents h2,p,a{
     font-family: "tinos", serif;
 }
@@ -360,14 +343,12 @@ nav span{
     border-radius: 16px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
->>>>>>> main
 .card-item{
     list-style: none;
 }
 .card-link{
     user-select: none;
     display: block;
-<<<<<<< HEAD
     background:  #dad4d4;
     padding: 18px;
     border-radius: 15px;
@@ -378,7 +359,6 @@ nav span{
 }
 .card-link:hover{
     border-color:black ;
-=======
     background:  transparent;
     padding: 10px;
     border-radius: 15px;
@@ -387,7 +367,6 @@ nav span{
 }
 .card-link:hover{
     border: 2px solid black ;
->>>>>>> main
 }
 .card-link img{
     width:100%;
@@ -428,8 +407,6 @@ nav span{
 .viewcontents.active-view{
     display: block;
 }
-<<<<<<< HEAD
-=======
 .fullimage{
     width: 80vw;
     height: 90vh;
@@ -457,7 +434,6 @@ nav span{
     color: #ff004f;
     font-size: 50px;
 }
->>>>>>> main
 /****************Contact**************/
 .content-left p{
      margin-top: 30px;
