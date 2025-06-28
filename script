@@ -1,0 +1,72 @@
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+var seemore = document.getElementById("see-more");
+function opendiv() {
+  seemore.style.display = "block";
+}
+
+
+
+var sidemenu = document.getElementById("menu");
+
+function openmenu() {
+  sidemenu.style.right = "0";
+}
+function closemenu() {
+  sidemenu.style.right = "-200px";
+}
+
+
+var view_tabs = document.getElementsByClassName("viewtabs");
+var view_contents = document.getElementsByClassName("viewcontents");
+
+function openviewtab(viewname) {
+  for (view_tab of view_tabs) {
+    view_tab.classList.remove("activetab");
+  }
+  for (view_content of view_contents) {
+    view_content.classList.remove("active-view");
+  }
+  event.currentTarget.classList.add("activetab");
+  document.getElementById(viewname).classList.add("active-view");
+}
+var fullimage = document.getElementById("full");
+var bodybehaviour = document.getElementById("behaviour");
+
+function openfullscreen(imageSrc) {
+  fullimage.style = `display: block;
+                     background: url(${imageSrc}) center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                   `;
+  bodybehaviour.style = `filter: blur(5px);
+                       pointer-events: none;
+                       user-select: none;`;
+}
+function closefullscreen() {
+  fullimage.style.display = "none";
+  bodybehaviour.style = `user-select: all;
+                       pointer-events: all;
+                       filter: blur(0);`;
+}
+
+document.querySelectorAll(".card-items").forEach((cardItem) => {
+  cardItem.addEventListener("click", function () {
+    const imgElement = cardItem.querySelector("img");
+    const imageSrc = imgElement.src;
+    openfullscreen(imageSrc);
+  });
+});
+
