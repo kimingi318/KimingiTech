@@ -6,25 +6,26 @@
  
     <title>KimingiTech</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/jpg" href="pp.images/KT1-01.png" />
-    <link rel="icon" type="image/jpg" href="pp.images/kimingi-tech.png" />
+    <link rel="icon" type="image/jpg" href="../pp.images/KT1-01.png" />
+    <link rel="icon" type="image/jpg" href="../pp.images/kimingi-tech.png" />
     <!--Linking with swiper.js css-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/5a9b01c09b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="behaviour">
-      <div class="header">
+      <div class="header" id="header">
         <div class="container">
           <nav>
-            <img
-              class="logo"
-              title="kimingiTech"
-              src="pp.images/kimingitech2-01.png"
-              alt="KimingiTech logo"
-            />
+            <div class="logo">
+              <h1><span>K.</span>imingi</h1>
+            </div>
             <ul id="menu">
               <li><a href="#header" onclick="closemenu()">Home</a></li>
               <li><a href="#about" onclick="closemenu()">About</a></li>
@@ -37,27 +38,21 @@
             <i class="fa-solid fa-bars" onclick="openmenu()" title="Menu"></i>
           </nav>
           <div class="header-text">
-            <p>UI/UX Designer</p>
+            <h1>
+              Hi I'm <span>Kimingi</span>
+            </h1>
+            <p>UI <span>&</span> UX Designer</p>
             <p>Graphical Designer</p>
             <p>Back-End Developer</p>
-            <h1>
-              Hi I'm <span>Kimingi</span><br />
-              from Kenya
-            </h1>
           </div>
         </div>
-        <span>
-          <a href="https://wa.me/0705168033" target="_blank">
-            <i class="fa-brands fa-whatsapp" title="Chat with on whatsapp"></i>
-          </a>
-        </span>
       </div>
       <!-----------------------------about------------------------------>
       <div class="about" id="about">
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="pp.images/profile.jpg" />
+              <img src="../pp.images/picture-1.png" />
             </div>
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
@@ -157,7 +152,7 @@
           <div class="sub-title">My Work</div>
           <div class="work-list">
             <div class="work">
-              <img src="pp.images/kimingi-techPrint.png" />
+              <img src="../pp.images/kimingi-techPrint.png" />
               <div class="layer">
                 <h3>Website</h3>
                 <p>
@@ -167,7 +162,7 @@
               </div>
             </div>
             <div class="work">
-              <img src="pp.images/kimingitech3-01.png" />
+              <img src="../pp.images/kimingitech3-01.png" />
               <div class="layer">
                 <h3>Graphics Designs</h3>
                 <p>
@@ -177,7 +172,7 @@
               </div>
             </div>
             <div class="work">
-              <img src="pp.images/nerd2-01.png" />
+              <img src="../pp.images/nerd2-01.png" />
               <div class="layer">
                 <h3>Apps</h3>
                 <p>
@@ -216,7 +211,7 @@
                 <div class="card-items swiper-slide" onclick="openfullscreen()">
                   <div class="card-link">
                     <img
-                      src="pp.images/kimingitech3-01.png"
+                      src="../pp.images/kimingitech3-01.png"
                       id="img"
                       alt="kimingitech logo"
                     />
@@ -226,7 +221,7 @@
                 <div class="card-items swiper-slide" onclick="openfullscreen()">
                   <div class="card-link">
                     <img
-                      src="pp.images/kimingitech1-01.png"
+                      src="../pp.images/kimingitech1-01.png"
                       id="img"
                       alt="Kimimgitech logo2"
                     />
@@ -236,7 +231,7 @@
                 <div class="card-items swiper-slide" onclick="openfullscreen()">
                   <div class="card-link">
                     <img
-                      src="pp.images/nerd1-01.png"
+                      src="../pp.images/nerd1-01.png"
                       id="img"
                       alt="group logos"
                     />
@@ -246,19 +241,13 @@
                 <div class="card-items swiper-slide" onclick="openfullscreen()">
                   <div class="card-link">
                     <img
-                      src="pp.images/poster1-01.png"
+                      src="../pp.images/poster1-01.png"
                       id="img"
                       alt="My advert poster"
-                    />
+                    />s
                     <p class="badge">Poster</p>
                   </div>
                 </div>
-                <!-- <div class="card-items swiper-slide" onclick="openfullscreen()">
-                                    <div class="card-link">
-                                        <img src="pp.images/PERKS.png" id="img" alt="beauty-poster">
-                                        <p class="badge">Poster</p>
-                                    </div>
-                                </div> -->
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-prev"></div>
@@ -271,101 +260,92 @@
           </div>
         </div>
       </div>
-      <!------------------Contact------------------->
-      <div class="contact" id="contact">
+      <!------------------footer------------------->
+
+      <footer id="contact">
         <div class="container">
-          <div class="row">
+          <div class="footer-container">
+            <div class="logoholder">
+              <div class="holder"></div>
+              <p>Empowering Your Digital Future</p>
+            </div>
             <div class="content-left">
-              <h1 class="sub-title">Contact Me</h1>
-              <a href="mailto:kimingipeter318@gmail.com"
-                ><p>
-                  <i class="fa-solid fa-paper-plane"></i>Email
-                  @kimingipeter318@gmail.com
-                </p></a
-              >
-              <a href="tel:+254705168033"
-                ><p><i class="fa-solid fa-phone"></i>Call Me: 0705168033</p></a
-              >
-              <div class="social-icons">
-                <a
-                  href="https://www.instagram.com/kimingi318?ighs=aTRsMTAwNGhobDhu"
-                  title="Instagram"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a href="" title="linkedin"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a
-                  href="https://x.com/mingiz318peter?t=erW-WrnVjNT jHse-8WPgzg&s=09"
-                  title="x-twitter"
-                  ><i class="fa-brands fa-x-twitter"></i
-                ></a>
-                <a
-                  href="https://www.facebook.com/share/yBx4v4UqZ1eMGQDK/"
-                  title="Facebook"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-              </div>
-              <a
-                href="pp.images/Peter-Kimingi Resume.docx"
-                download
-                class="btn btn2"
-                >Download CV</a
-              >
+                <h1 >Contact Me</h1>
+                <a href="mailto:kimingipeter318@gmail.com"><p>
+                    <i class="fa-solid fa-paper-plane"></i>kimingipeter318@gmail.com
+                  </p></a
+                >
+                <a href="tel:+254705168033"
+                  ><p><i class="fa-solid fa-phone"></i>+254705168033</p></a
+                >
+                <a href="../pp.images/Peter-Kimingi Resume.docx" download  class=" btn resume-btn">Download CV</a>
+            </div>
+            <div class="footer-about">
+              <h1>Quick Links</h1>
+              <ul>
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#services" >Services</a></li>
+                <li><a href="#portifolio" >Portifolio</a></li>
+                <li><a href="#contact" >Contact</a></li>
+              </ul>
             </div>
           </div>
+          <div class="social-icons" id="social-icons"></div>
+          <hr style="width: 90%; margin: 0 5%;">
+          <div class="copyright">
+            <p>
+              All rights reserved
+              <span
+                ><i class="fa-regular fa-copyright"></i>.Made by <b>KimingiTech</b
+                ><span><i class="fa-solid fa-heart"></i></span
+              ></span>
+              Empowering Your Digital Future
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="copyright">
-        <p>
-          All rights reserved
-          <span
-            ><i class="fa-regular fa-copyright"></i>.Made by <b>KimingiTech</b
-            ><span><i class="fa-solid fa-heart"></i></span
-          ></span>
-          Empowering Your Digital Future
-        </p>
-      </div>
+      </footer>
     </div>
     <div class="fullimage" id="full">
       <button title="close" onclick="closefullscreen()">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <script src="script"></script>
+
+
+    <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-new Swiper(".swiper", {
-  loop: true,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-  },
+        new Swiper(".swiper", {
+          loop: true,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+          },
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+          },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+        });
     </script>
   </body>
 </html>

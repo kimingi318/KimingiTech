@@ -70,3 +70,21 @@ document.querySelectorAll(".card-items").forEach((cardItem) => {
   });
 });
 
+fetch('../public/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('social-icons');
+    data.forEach(account => {
+      const link = document.createElement('a');
+      link.href = account.url;
+      link.target = "_blank";
+      link.innerHTML = `<i class="${account.icon}"></i>`;
+      link.classList.add('social-icon');
+      container.appendChild(link);
+      console.log(`Added icon for ${account.name}`);
+    });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
+
+
+

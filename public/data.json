@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/kimingi318?ighs=aTRsMTAwNGhobDhu",
+        "icon": "fa-brands fa-instagram",
+        "title": "Instagram Profile"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/Kimingi318",
+        "icon": "fa-brands fa-github",
+        "title": "GitHub Profile"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kimingi318/",
+        "icon": "fa-brands fa-linkedin",
+        "title": "LinkedIn Profile"
+    },
+    {
+        "name": "X",
+        "url": "https://x.com/mingiz318peter?t=erW-WrnVjNT jHse-8WPgzg&s=09",
+        "icon": "fa-brands fa-x-twitter",
+        "title": "X Profile"
+    },
+    {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/share/yBx4v4UqZ1eMGQDK/",
+        "icon": "fa-brands fa-facebook",
+        "title": "Facebook Profile"
+    },
+    {
+        "name": "WhatsApp",
+        "url": "https://wa.me/254701234567",
+        "icon": "fa-brands fa-whatsapp",
+        "title": "WhatsApp Profile"
+    }
+]
