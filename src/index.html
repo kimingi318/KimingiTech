@@ -20,11 +20,10 @@
   </head>
   <body>
     <div id="behaviour">
-      <div class="header" id="header">
-        <div class="container">
-          <nav>
+        <nav id="top">
+          <div class="container">
             <div class="logo">
-              <h1><span>K.</span>imingi</h1>
+              <h1><span>K</span>imingi</h1>
             </div>
             <ul id="menu">
               <li><a href="#header" onclick="closemenu()">Home</a></li>
@@ -35,8 +34,14 @@
               </li>
               <li><a href="#contact" onclick="closemenu()">Contact</a></li>
             </ul>
+            <div class="profilephoto">
+              <img class="profile-img" src="../public/picture-1.png" alt="profile photo">
+            </div>
             <i class="fa-solid fa-bars" onclick="openmenu()" title="Menu"></i>
-          </nav>
+          </div>
+      </nav>
+      <div class="header" id="header">
+        <div class="container">
           <div class="header-text">
             <h1>
               Hi I'm <span>Kimingi</span>
@@ -52,7 +57,7 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="../pp.images/picture-1.png" />
+              <img src="../public/picture-1.png" />
             </div>
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
@@ -120,6 +125,7 @@
           <h1 class="sub-titles">My Services</h1>
           <div class="services-list">
             <div>
+              <i class="fa-solid fa-laptop-code"></i>
               <h2>web-design</h2>
               <p>
                 I develop websites with latest designs ,colors of your choice ,a
@@ -129,6 +135,7 @@
             </div>
 
             <div>
+              <i class="fa-solid fa-pen-nib"></i>
               <h2>Graphical-design</h2>
               <p>
                 Logos ,Postas,cards for different sizes,designs,color blends ,of
@@ -137,6 +144,7 @@
             </div>
 
             <div>
+              <i class="fa-sharp fa-solid fa-microchip" style="color: #ffffff;"></i>
               <h2>App design</h2>
               <p>
                 Get an app today .You want to make your works digital holla at
@@ -152,7 +160,7 @@
           <div class="sub-title">My Work</div>
           <div class="work-list">
             <div class="work">
-              <img src="../pp.images/kimingi-techPrint.png" />
+              <img src="../public/kimingi-techPrint.png" />
               <div class="layer">
                 <h3>Website</h3>
                 <p>
@@ -162,7 +170,7 @@
               </div>
             </div>
             <div class="work">
-              <img src="../pp.images/kimingitech3-01.png" />
+              <img src="../public/kimingitech3-01.png" />
               <div class="layer">
                 <h3>Graphics Designs</h3>
                 <p>
@@ -172,7 +180,7 @@
               </div>
             </div>
             <div class="work">
-              <img src="../pp.images/nerd2-01.png" />
+              <img src="../public/nerd2-01.png" />
               <div class="layer">
                 <h3>Apps</h3>
                 <p>
@@ -182,7 +190,7 @@
               </div>
             </div>
           </div>
-          <a class="btn btn1" onclick="opendiv()">See More</a>
+          <a class="btn btn1 " onclick="opendiv()">See More</a>
         </div>
       </div>
       <!-------------------seemore------------------>
@@ -206,53 +214,12 @@
             </ul>
           </div>
           <div class="viewcontents" id="Designs">
-            <div class="card-wrapper swiper">
-              <div class="card-list swiper-wrapper">
-                <div class="card-items swiper-slide" onclick="openfullscreen()">
-                  <div class="card-link">
-                    <img
-                      src="../pp.images/kimingitech3-01.png"
-                      id="img"
-                      alt="kimingitech logo"
-                    />
-                    <p class="badge">Individual logo</p>
-                  </div>
-                </div>
-                <div class="card-items swiper-slide" onclick="openfullscreen()">
-                  <div class="card-link">
-                    <img
-                      src="../pp.images/kimingitech1-01.png"
-                      id="img"
-                      alt="Kimimgitech logo2"
-                    />
-                    <p class="badge">Logo 2</p>
-                  </div>
-                </div>
-                <div class="card-items swiper-slide" onclick="openfullscreen()">
-                  <div class="card-link">
-                    <img
-                      src="../pp.images/nerd1-01.png"
-                      id="img"
-                      alt="group logos"
-                    />
-                    <p class="badge">Group-Logo</p>
-                  </div>
-                </div>
-                <div class="card-items swiper-slide" onclick="openfullscreen()">
-                  <div class="card-link">
-                    <img
-                      src="../pp.images/poster1-01.png"
-                      id="img"
-                      alt="My advert poster"
-                    />s
-                    <p class="badge">Poster</p>
-                  </div>
-                </div>
+              <div class="card-wrapper swiper">
+                <div id="card-list" class="card-list swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
           </div>
           <div class="viewcontents" id="Apps">
             <h2>Apps</h2>
@@ -278,7 +245,7 @@
                 <a href="tel:+254705168033"
                   ><p><i class="fa-solid fa-phone"></i>+254705168033</p></a
                 >
-                <a href="../pp.images/Peter-Kimingi Resume.docx" download  class=" btn resume-btn">Download CV</a>
+                <a href="../public/Peter-Kimingi Resume.docx" download  class=" btn resume-btn">Download CV</a>
             </div>
             <div class="footer-about">
               <h1>Quick Links</h1>
@@ -297,9 +264,8 @@
             <p>
               All rights reserved
               <span
-                ><i class="fa-regular fa-copyright"></i>.Made by <b>KimingiTech</b
-                ><span><i class="fa-solid fa-heart"></i></span
-              ></span>
+                ><i class="fa-regular fa-copyright"></i></span>
+                .Made by <b>KimingiTech</b>
               Empowering Your Digital Future
             </p>
           </div>
@@ -313,7 +279,7 @@
     </div>
 
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         new Swiper(".swiper", {

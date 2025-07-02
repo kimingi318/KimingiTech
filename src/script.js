@@ -74,7 +74,11 @@ fetch('../public/data.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('social-icons');
-    data.forEach(account => {
+    const socials = data.socialLinks ;
+    const cards = data['card-items'];
+
+
+    socials.forEach(account => {
       const link = document.createElement('a');
       link.href = account.url;
       link.target = "_blank";
@@ -83,8 +87,23 @@ fetch('../public/data.json')
       container.appendChild(link);
       console.log(`Added icon for ${account.name}`);
     });
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+
+
+    cards.forEach(card => {
+      const carditem = document.createElement('div');
+      carditem.classList.add('card-items','swiper-slide');
+      // carditem.addEventListener('click', function() {
+      //   openfullscreen(card.src);
+      // });
+      carditem.innerHTML = `
+        <div class="card-link">
+          <img src="${card.src}" alt="${card.alt}" id="img" />
+          <p class="badge">${card.badge}</p>
+        </div>
+      `;
+      document.getElementById('card-list').appendChild(carditem);
+    });
+    }).catch(error => console.error('Error loading JSON:', error));
 
 
 

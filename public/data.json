@@ -1,4 +1,5 @@
-[
+{
+"socialLinks": [
     {
         "name": "Instagram",
         "url": "https://www.instagram.com/kimingi318?ighs=aTRsMTAwNGhobDhu",
@@ -34,5 +35,28 @@
         "url": "https://wa.me/254701234567",
         "icon": "fa-brands fa-whatsapp",
         "title": "WhatsApp Profile"
-    }
-]
+    }],
+"card-items":[
+        { 
+            "src": "/public/poster1-01.png",
+            "alt": "My advert poster",
+            "badge": "Poster"
+        },
+        {
+            "src": "/public/kimingitech1-01.png",
+            "alt": "KimingiTech Logo2",
+            "badge": "Logo 2"
+        },
+        {
+            "src": "/public/kimingitech3-01.png",
+            "alt": "kimingitech logo",
+            "badge": "Individual logo"
+        },
+        {
+            "src":"/public/nerd1-01.png",
+            "alt": "group logos",
+            "badge": "Group logo"
+        }
+
+    ]
+}
